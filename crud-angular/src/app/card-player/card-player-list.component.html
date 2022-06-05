@@ -1,0 +1,7 @@
+<div class="cards" *ngIf="players">
+  <div class="center" *ngFor="let player of players">
+
+    <card-player [player] = player ></card-player>
+
+  </div>
+</div>
