@@ -1,5 +1,8 @@
+import { Attributes } from "./attributes";
+
 export interface Character {
   _id: string;
   name: string;
-  category: string;
+  class: string;
+  attributes: Attributes;
 }

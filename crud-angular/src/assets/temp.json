@@ -1,0 +1,47 @@
+[
+  {
+    "_id": "1",
+    "name": "Nome",
+    "avatar": "Avatar.ASSASSIN",
+    "role": "Role.DPS",
+    "guild": "Teams",
+    "age": 29,
+    "description": "",
+    "level": 10,
+    "points": 2456,
+    "energy": 6,
+    "victories": 1,
+    "matches": 3,
+    "'characters'": []
+  },
+  {
+    "_id": "2",
+    "name": "Nome2",
+    "avatar": "Avatar.DRAGON",
+    "role": "Role.TANK",
+    "guild": "Teamer",
+    "age": 23,
+    "description": "",
+    "level": 34,
+    "points": 8690,
+    "energy": 2,
+    "victories": 34,
+    "matches": 57,
+    "characters": []
+  },
+  {
+    "_id": "3",
+    "name": "Nome3",
+    "avatar": "Avatar.MAGICIAN",
+    "role": "Role.SUPPORT",
+    "guild": "Teamear",
+    "age": 21,
+    "description": "",
+    "level": 17,
+    "points": 4642,
+    "energy": 5,
+    "victories": 13,
+    "matches": 25,
+    "characters": []
+  }
+]

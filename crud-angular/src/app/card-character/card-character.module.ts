@@ -5,16 +5,8 @@ import { CardCharacterComponent } from './card-character.component';
 import { AppMaterialModule } from '../shared/app-material/app-material.module';
 
 @NgModule({
-  declarations: [
-    CardCharacterComponent
-  ],
-  imports: [
-    CommonModule,
-    CardCharacterRoutingModule,
-    AppMaterialModule
-  ],
-  exports: [
-    CardCharacterComponent
-  ]
+  declarations: [CardCharacterComponent],
+  imports: [CommonModule, CardCharacterRoutingModule, AppMaterialModule],
+  exports: [CardCharacterComponent],
 })
-export class CardCharacterModule { }
+export class CardCharacterModule {}

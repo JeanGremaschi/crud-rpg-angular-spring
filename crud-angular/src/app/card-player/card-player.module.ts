@@ -7,19 +7,13 @@ import { CardPlayerListComponent } from './card-player-list.component';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [
-    CardPlayerComponent,
-    CardPlayerListComponent
-  ],
+  declarations: [CardPlayerComponent, CardPlayerListComponent],
   imports: [
     CommonModule,
     CardPlayerRoutingModule,
     AppMaterialModule,
-    FormsModule
+    FormsModule,
   ],
-  exports: [
-    CardPlayerComponent,
-    CardPlayerListComponent
-  ]
+  exports: [CardPlayerComponent, CardPlayerListComponent],
 })
-export class CardPlayerModule { }
+export class CardPlayerModule {}

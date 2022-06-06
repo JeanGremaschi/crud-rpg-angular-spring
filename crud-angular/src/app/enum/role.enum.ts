@@ -1,5 +1,5 @@
 export enum Role {
-    SUPPORT = 'Support',
-    TANK = 'Tank',
-    DPS = 'Damage Dealer'
+  SUPPORT = 'Support',
+  TANK = 'Tank',
+  DPS = 'Damage Dealer',
 }

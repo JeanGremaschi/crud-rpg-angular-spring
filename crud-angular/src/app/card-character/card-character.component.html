@@ -1,30 +1,35 @@
-<table mat-table [dataSource]="characters" class="mat-elevation-z8">
-
-  <mat-toolbar color="primary">
-    <span>Cursos disponíveis</span>
-</mat-toolbar>
-
-  <ng-container matColumnDef="position">
-    <th mat-header-cell *matHeaderCellDef> No. </th>
-    <td mat-cell *matCellDef="let element"> {{element.position}} </td>
-  </ng-container>
-
-  <ng-container matColumnDef="name">
-    <th mat-header-cell *matHeaderCellDef> Curso </th>
-    <td mat-cell *matCellDef="let course"> {{course.name}} </td>
-  </ng-container>
-
-  <ng-container matColumnDef="category">
-    <th mat-header-cell *matHeaderCellDef> Categoria </th>
-    <td mat-cell *matCellDef="let course"> {{course.category}} </td>
-  </ng-container>
-
-  <ng-container matColumnDef="symbol">
-    <th mat-header-cell *matHeaderCellDef> Symbol </th>
-    <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
-  </ng-container>
-
-  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-</table>
-
+<div class="container">
+  <div class="box">
+    <span></span>
+    <div class="content">
+      <h2>Card one</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <a href="#">Read More</a>
+    </div>
+  </div>
+  <div class="box">
+    <span></span>
+    <div class="content">
+      <h2>Card two</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <a href="#">Read More</a>
+    </div>
+  </div>
+  <div class="box">
+    <span></span>
+    <div class="content">
+      <h2>Card Three</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <a href="#">Read More</a>
+    </div>
+  </div>
+</div>
