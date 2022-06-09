@@ -1,5 +1,5 @@
 import { Character } from './character';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'card-character',
@@ -7,41 +7,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card-character.component.scss'],
 })
 export class CardCharacterComponent implements OnInit {
-  characters: Character[] = [
-    {
-      _id: '1',
-      name: 'Nome',
-      class: 'Classe',
-      attributes: {
-        lifepoints: 100,
-        manapoints: 100,
-        charisma: 0,
-        dexterity: 0,
-        intelligence: 0,
-        lucky: 0,
-        strength: 0,
-        wisdom: 0,
-        resistence: 0,
-      },
+  @Input()
+  character: Character = {
+    _id: '1',
+    name: 'Nome',
+    class: 'Classe',
+    attributes: {
+      hp: 100,
+      mp: 100,
+      charisma: 0,
+      dexterity: 0,
+      intelligence: 0,
+      lucky: 0,
+      strength: 0,
+      wisdom: 0,
+      resistence: 0,
     },
-    {
-      _id: '2',
-      name: 'Nome2',
-      class: 'Classe',
-      attributes: {
-        lifepoints: 100,
-        manapoints: 100,
-        charisma: 0,
-        dexterity: 0,
-        intelligence: 0,
-        lucky: 0,
-        strength: 0,
-        wisdom: 0,
-        resistence: 0,
-      },
-    },
-  ];
-  displayedColumns = ['name', 'category'];
+  };
 
   constructor() {}
 

@@ -1,0 +1,50 @@
+[
+  {
+    "_id": "1",
+    "name": "Nome",
+    "class": "Classe",
+    "attributes": {
+      "hp": "100",
+      "mp": "100",
+      "charisma": "0",
+      "dexterity": "0",
+      "intelligence": "0",
+      "lucky": "0",
+      "strength": "0",
+      "wisdom": "0",
+      "resistence": "0"
+    }
+  },
+  {
+    "_id": "2",
+    "name": "Nome2",
+    "class": "Classe2",
+    "attributes": {
+      "hp": "100",
+      "mp": "100",
+      "charisma": "0",
+      "dexterity": "0",
+      "intelligence": "0",
+      "lucky": "0",
+      "strength": "0",
+      "wisdom": "0",
+      "resistence": "0"
+    }
+  },
+  {
+    "_id": "3",
+    "name": "Nome3",
+    "class": "Classe3",
+    "attributes": {
+      "hp": "100",
+      "mp": "100",
+      "charisma": "0",
+      "dexterity": "0",
+      "intelligence": "0",
+      "lucky": "0",
+      "strength": "0",
+      "wisdom": "0",
+      "resistence": "0"
+    }
+  },
+]

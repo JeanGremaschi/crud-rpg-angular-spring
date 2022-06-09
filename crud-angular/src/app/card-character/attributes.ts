@@ -1,6 +1,6 @@
 export interface Attributes {
-  lifepoints: number;
-  manapoints: number;
+  hp: number;
+  mp: number;
   strength: number;
   resistence: number;
   dexterity: number;

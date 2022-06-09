@@ -10,7 +10,7 @@ import { tap, first } from 'rxjs/operators';
   providedIn: 'root',
 })
 export class CardPlayerService {
-  private readonly API = '/assets/atemp.json';
+  private readonly API = 'http://localhost:8080/api/players';
 
   constructor(private httpClient: HttpClient) {}
 

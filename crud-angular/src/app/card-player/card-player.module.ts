@@ -1,3 +1,4 @@
+import { SharedModule } from './../shared/shared.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CardPlayerRoutingModule } from './card-player-routing.module';
@@ -13,6 +14,7 @@ import { FormsModule } from '@angular/forms';
     CardPlayerRoutingModule,
     AppMaterialModule,
     FormsModule,
+    SharedModule
   ],
   exports: [CardPlayerComponent, CardPlayerListComponent],
 })

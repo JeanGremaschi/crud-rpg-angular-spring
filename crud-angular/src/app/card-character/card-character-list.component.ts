@@ -1,6 +1,6 @@
-import { CardPlayerService } from './card-player.service';
+import { CardCharacterService } from './card-character.service';
 import { Avatar } from '../enum/avatar.enum';
-import { Player } from './player';
+import { Character } from './character';
 import { Component, OnInit, NgModule } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Role } from '../enum/role.enum';
@@ -8,18 +8,18 @@ import { Observable, of } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 
 @Component({
-  selector: 'card-player-list',
-  templateUrl: './card-player-list.component.html',
-  styleUrls: ['./card-player.component.scss'],
+  selector: 'card-character-list',
+  templateUrl: './card-character-list.component.html',
+  styleUrls: ['./card-character.component.scss'],
 })
-export class CardPlayerListComponent implements OnInit {
-  players: Player[] = [];
+export class CardCharacterListComponent implements OnInit {
+  characters: Character[] = [];
 
   constructor(
-    private playerService: CardPlayerService,
+    private characterService: CardCharacterService,
     private snackBar: MatSnackBar
   ) {
-    this.playerService
+    this.characterService
       .list()
       .pipe(
         catchError((error) => {
@@ -27,12 +27,12 @@ export class CardPlayerListComponent implements OnInit {
           return of([]); /* esse retorno n ta funcionando direito */
         })
       )
-      .subscribe((players) => (this.players = players));
+      .subscribe((characters) => (this.characters = characters));
   }
 
   ngOnInit(): void {}
 
   onError(error: string){
-//todo e ae? erro?
+
   }
 }
